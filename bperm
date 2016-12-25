@@ -1,57 +1,40 @@
 default: default
 groups:
-  Owner:
+  owner:
     permissions:
     - '*'
     groups: []
     meta:
       prefix: '&4# &6'
-  help:
-    permissions: []
-    groups: []
-  Default:
+  default:
     permissions: []
     groups: []
     meta:
       prefix: '&8'
-  Moderator:
+  mod:
     permissions:
-    - easywarp.command.delwarp
-    - easywarp.command.listwarps
-    - easywarp.command.setwarp
-    - easywarp.command.warp
-    - easywarp.command.warpother
     - essentials.fly
-    - essentials.give
-    - essentials.heal
-    - essentials.item
     - essentials.jail
     - essentials.kick
     - essentials.mute
-    - essentials.repair
     - essentials.tempban
-    - essentials.tjail
-    - essentials.vanish
-    groups: []
-    meta:
-      prefix: '&1$ &f'
-  Admin:
-    permissions:
-    - easywarp.command.delwarp
-    - easywarp.command.listwarps
-    - easywarp.command.setwarp
-    - easywarp.command.warp
-    - easywarp.command.warpother
-    - essentials.ban
-    - essentials.enchant
-    - essentials.gamemode
-    - essentials.ipban
     - essentials.pardon
+    - essentials.ban
+    - essentials.tjail
+    - essentials.ipban
     - essentials.unban
     - essentials.unipban
     groups: []
     meta:
-      prefix: '&9#[Admin]'
-  Player:
+      prefix: '&1$ &f'
+  admin:
+    permissions:
+    - essentials.enchant
+    - essentials.gamemode
+    - essentials.vanish
+    groups: []
+    meta:
+      prefix: '&4#'
+  player:
     permissions: []
     groups: []
